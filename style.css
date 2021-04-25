@@ -1,0 +1,187 @@
+body {
+  background-color: #fafafa;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+/* Header Styles */
+.header {
+  text-align: center;
+  background-image: url("./img/cp2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 34em;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  color: white;
+  padding-top: 0.625em;
+}
+.menu .logo {
+  width: 3.75em;
+  height: auto;
+  box-shadow: 0.0625em 0.0625em 0.1875em rgb(128, 0, 0);
+  border-radius: 3.125em;
+  margin-left: 12%;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12%;
+}
+.menu ul li a {
+  font-size: 1.125em;
+  letter-spacing: 2px;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  font-size: 1.2em;
+  background-color: #ffffff;
+  color: #2e3192;
+  border-radius: 5px;
+}
+.header h1 {
+  font-family: "American Captain", sans-serif;
+  font-size: 3.9em;
+  color: white;
+  margin-top: 7%;
+  letter-spacing: 5px;
+}
+.header h2 {
+  font-family: "American Captain", sans-serif;
+  font-size: 1.6em;
+  color: white;
+  margin: 1%;
+  letter-spacing: 1px;
+}
+
+/* Header Styles */
+
+/* Last Movies Cards Styles */
+.edit-cards {
+  margin: 3em 12.5em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.edit-cards h2 {
+  font-weight: bold;
+  width: 100%;
+  font-size: 2.5em;
+  letter-spacing: 5px;
+  margin-bottom: 0.625em;
+}
+.card {
+  box-shadow: 2px 5px 6px #151515;
+  width: 21.875em;
+  border-radius: 1em;
+}
+.card img {
+  border-radius: 1em;
+}
+/* Last Movies Cards Styles */
+.historia {
+  margin: 3em auto 0 auto;
+  height: 34em;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+.descripcion {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.descripcion h3 {
+  font-weight: bold;
+  font-size: 2.5em;
+  width: 100%;
+  margin-bottom: 0.3em;
+}
+.descripcion p {
+  width: 80%;
+  font-size: 1.1em;
+  margin-bottom: 0.8em;
+}
+.descripcion button {
+  width: 30%;
+  outline: none;
+  background-color: #002d5c;
+  border: none;
+  color: #f0f0f0;
+  font-weight: bold;
+  border-radius: 1em;
+}
+.imgDescripcion {
+  width: 60%;
+  height: 34em;
+}
+.imgDescripcion img {
+  margin-right: 12%;
+  height: 100%;
+  width: 75%;
+  filter: brightness(0.4);
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  height: 10em;
+  background-color: #151515;
+}
+
+/* Media Queries */
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  body {
+    font-size: 14px;
+  }
+}
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  body {
+    font-size: 14px;
+  }
+  .edit-cards {
+    margin: 1.25em 11em;
+  }
+  .edit-cards .card {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  body {
+    font-size: 10px;
+  }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  body {
+    font-size: 8px;
+  }
+  .edit-cards {
+    margin: 1.25em 9em;
+  }
+}
