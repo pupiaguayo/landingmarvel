@@ -120,6 +120,8 @@ body {
   border-radius: 1em;
 }
 /* Last Movies Cards Styles */
+
+/* Storie Section */
 .historia {
   margin: 3em auto 0 auto;
   height: 34em;
@@ -171,7 +173,9 @@ button {
   object-fit: cover;
   object-position: center;
 }
+/* Storie Section */
 
+/* Footer */
 .footer {
   height: 6em;
   background-color: #151515;
@@ -194,6 +198,7 @@ button {
   width: 100%;
   color: #858585;
 }
+/* Footer */
 
 /* Media Queries */
 /* // Medium devices (tablets, less than 992px) */
