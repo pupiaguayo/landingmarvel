@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "American Captain";
+  src: url("//db.onlinewebfonts.com/t/a6bec1c4ef2d2fd1bac5a6951f5f32a3.eot");
+  src: url("//db.onlinewebfonts.com/t/a6bec1c4ef2d2fd1bac5a6951f5f32a3.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a6bec1c4ef2d2fd1bac5a6951f5f32a3.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a6bec1c4ef2d2fd1bac5a6951f5f32a3.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a6bec1c4ef2d2fd1bac5a6951f5f32a3.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a6bec1c4ef2d2fd1bac5a6951f5f32a3.svg#American Captain")
+      format("svg");
+}
 body {
   background-color: #fafafa;
   text-align: center;
@@ -19,7 +33,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  align-items: center;
   color: white;
+  flex-wrap: wrap;
   padding-top: 0.625em;
 }
 .menu .logo {
@@ -34,6 +50,11 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+.menu i {
+  display: none;
+  font-size: 2em;
+  margin-right: 12%;
 }
 .menu ul {
   display: flex;
@@ -56,14 +77,14 @@ body {
   border-radius: 5px;
 }
 .header h1 {
-  font-family: "American Captain", sans-serif;
+  font-family: "American Captain";
   font-size: 3.9em;
   color: white;
   margin-top: 7%;
   letter-spacing: 5px;
 }
 .header h2 {
-  font-family: "American Captain", sans-serif;
+  font-family: "American Captain";
   font-size: 1.6em;
   color: white;
   margin: 1%;
@@ -192,6 +213,21 @@ button {
 @media (max-width: 767.98px) {
   body {
     font-size: 10px;
+  }
+  .menu i {
+    display: block;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  .menu ul li {
+    margin-top: 10px;
   }
   .edit-cards {
     margin: 1.25em 15%;
